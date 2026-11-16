@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accueil - Boutik</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header>
+  <div class="bandeau">
+    <span id="bandeau">Livraison offerte dès 50 €</span>
+    <button type="button" id="pause">Pause</button>
+  </div>
+  <div class="entete">
+    <a href="index.html"><img src="images/logo.svg" alt="Boutik, retour à l'accueil"></a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="#produits">Produits</a></li>
+        <li><a href="#livraison">Livraison</a></li>
+        <li><a href="pages/inscription.html">Inscription</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="hero">
+    <img src="images/deco.svg" alt="" class="deco">
+    <h1>Boutik</h1>
+    <p>Mugs, sacs, carnets et gourdes.</p>
+    <p class="promo">Soldes d'hiver : -30 % sur les sacs</p>
+  </section>
+
+  <section>
+    <h2 id="produits">Nos produits</h2>
+    <ul class="produits">
+      <li class="carte">
+        <img src="images/mug.svg" alt="Mug en grès bleu">
+        <h3>Mug en grès</h3>
+        <p class="prix">12 €</p>
+        <button type="button" class="ajouter" aria-label="Ajouter au panier : Mug en grès">Ajouter au panier</button>
+      </li>
+      <li class="carte">
+        <img src="images/sac.svg" alt="Sac en toile beige">
+        <h3>Sac en toile</h3>
+        <p class="prix"><strong>Soldé</strong> <s>24 €</s> <span class="solde">18 €</span></p>
+        <button type="button" class="ajouter" aria-label="Ajouter au panier : Sac en toile">Ajouter au panier</button>
+      </li>
+      <li class="carte">
+        <img src="images/carnet.svg" alt="Carnet A5 vert">
+        <h3>Carnet A5</h3>
+        <p class="prix">6 €</p>
+        <button type="button" class="ajouter" aria-label="Ajouter au panier : Carnet A5">Ajouter au panier</button>
+      </li>
+      <li class="carte">
+        <img src="images/gourde.svg" alt="Gourde inox gris-bleu">
+        <h3>Gourde inox</h3>
+        <p class="prix">15 €</p>
+        <button type="button" class="ajouter" aria-label="Ajouter au panier : Gourde inox">Ajouter au panier</button>
+      </li>
+    </ul>
+    <p>Livraison offerte dès 50 € <button type="button" id="ouvrir">Voir les conditions de livraison</button></p>
+  </section>
+
+  <section>
+    <h2>Actualités</h2>
+    <div class="articles">
+      <article>
+        <h3><a href="#">Bien choisir son mug</a></h3>
+        <p>Quelle taille et quelle matière choisir.</p>
+      </article>
+      <article>
+        <h3><a href="#">Entretenir sa gourde</a></h3>
+        <p>Se lave à la main et sèche à l'air.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Avis</h2>
+    <blockquote lang="en">
+      <p>Great quality, fast delivery!</p>
+    </blockquote>
+    <p>Sam, client</p>
+  </section>
+
+  <section>
+    <h2 id="livraison">Livraison</h2>
+    <table>
+      <caption>Modes de livraison</caption>
+      <thead>
+        <tr><th scope="col">Mode</th><th scope="col">Délai</th><th scope="col">Prix</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Point relais</th><td>3 jours</td><td>3 €</td></tr>
+        <tr><th scope="row">Domicile</th><td>2 jours</td><td>5 €</td></tr>
+        <tr><th scope="row">Express</th><td>24 h</td><td>9 €</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Retrait en boutique</h2>
+    <iframe title="Carte : accès à la boutique" src="https://www.openstreetmap.org/export/embed.html?bbox=2.33%2C48.85%2C2.37%2C48.87&amp;layer=mapnik"></iframe>
+  </section>
+
+  <section>
+    <h2>Questions fréquentes</h2>
+    <h3><button type="button" class="question" aria-expanded="false" aria-controls="reponse1">Comment retourner un article ?</button></h3>
+    <p id="reponse1" class="reponse" hidden>Vous avez 14 jours pour le renvoyer.</p>
+    <h3><button type="button" class="question" aria-expanded="false" aria-controls="reponse2">Puis-je modifier ma commande ?</button></h3>
+    <p id="reponse2" class="reponse" hidden>Oui, tant qu'elle n'est pas expédiée.</p>
+    <h3><button type="button" class="question" aria-expanded="false" aria-controls="reponse3">Quels moyens de paiement acceptez-vous ?</button></h3>
+    <p id="reponse3" class="reponse" hidden>Carte bancaire et virement.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Boutik</p>
+  <ul class="reseaux">
+    <li><a href="#"><img src="images/facebook.svg" alt="Facebook"></a></li>
+    <li><a href="#"><img src="images/instagram.svg" alt="Instagram"></a></li>
+  </ul>
+  <a href="#">Mentions légales</a>
+</footer>
+
+<dialog id="modale" aria-labelledby="titre-modale">
+  <h2 id="titre-modale">Conditions de livraison</h2>
+  <p>Livraison offerte dès 50 € d'achat en France métropolitaine. Sinon, 5 €.</p>
+  <button type="button" id="fermer">Fermer</button>
+</dialog>
+
+<div class="message" id="message" role="status"></div>
+
+<script src="js/bandeau.js"></script>
+<script src="js/accueil.js"></script>
+</body>
+</html>

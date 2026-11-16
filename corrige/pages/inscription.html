@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inscription - Boutik</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header>
+  <div class="bandeau">
+    <span id="bandeau">Livraison offerte dès 50 €</span>
+    <button type="button" id="pause">Pause</button>
+  </div>
+  <div class="entete">
+    <a href="../index.html"><img src="../images/logo.svg" alt="Boutik, retour à l'accueil"></a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../index.html#produits">Produits</a></li>
+        <li><a href="../index.html#livraison">Livraison</a></li>
+        <li><a href="inscription.html" aria-current="page">Inscription</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+  <h1>Créer mon compte</h1>
+  <p>Tous les champs sont obligatoires sauf mention contraire.</p>
+
+  <form id="formulaire" novalidate>
+    <div class="groupe">
+      <label for="prenom">Prénom (facultatif)</label>
+      <input type="text" id="prenom" autocomplete="given-name">
+    </div>
+
+    <div class="groupe">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" autocomplete="family-name" aria-describedby="erreur-nom">
+      <span class="erreur" id="erreur-nom"></span>
+    </div>
+
+    <div class="groupe">
+      <label for="email">Adresse e-mail</label>
+      <span class="aide" id="aide-email">Format attendu : nom@domaine.fr</span>
+      <input type="email" id="email" autocomplete="email" aria-describedby="aide-email erreur-email">
+      <span class="erreur" id="erreur-email"></span>
+    </div>
+
+    <div class="groupe">
+      <label for="mdp">Mot de passe</label>
+      <input type="password" id="mdp" autocomplete="new-password" aria-describedby="erreur-mdp">
+      <span class="erreur" id="erreur-mdp"></span>
+    </div>
+
+    <fieldset>
+      <legend>Vous êtes</legend>
+      <input type="radio" name="profil" id="particulier">
+      <label for="particulier">Particulier</label>
+      <input type="radio" name="profil" id="professionnel">
+      <label for="professionnel">Professionnel</label>
+    </fieldset>
+
+    <div class="groupe">
+      <input type="checkbox" id="newsletter">
+      <label for="newsletter">Je souhaite recevoir la newsletter (facultatif)</label>
+    </div>
+
+    <button type="submit">Créer mon compte</button>
+  </form>
+</main>
+
+<footer>
+  <p>© 2026 Boutik</p>
+  <ul class="reseaux">
+    <li><a href="#"><img src="../images/facebook.svg" alt="Facebook"></a></li>
+    <li><a href="#"><img src="../images/instagram.svg" alt="Instagram"></a></li>
+  </ul>
+  <a href="#">Mentions légales</a>
+</footer>
+
+<div class="message" id="message" role="status"></div>
+
+<script src="../js/bandeau.js"></script>
+<script src="../js/inscription.js"></script>
+</body>
+</html>
