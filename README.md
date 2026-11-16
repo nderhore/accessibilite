@@ -6,9 +6,9 @@ Il est volontairement non accessible. Pendant le cours, on le corrige ensemble.
 
 ## Lancer le site
 
-Ouvrir `site/index.html` dans un navigateur.
+Ouvrir `index.html` dans un navigateur.
 
-## Contenu du dossier site
+## Contenu
 
 - `index.html` : accueil
 - `inscription.html` : formulaire
