@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Accueil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bandeau" id="bandeau">Livraison offerte dès 50 €</div>
+<div class="page">
+  <div class="entete">
+    <a href="index.html"><img src="images/logo.svg"></a>
+    <div class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="#produits">Produits</a>
+      <a href="#livraison">Livraison</a>
+      <a href="inscription.html">Inscription</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <img src="images/deco.svg" class="deco">
+    <div class="titre-grand">Boutik</div>
+    <div>Mugs, sacs, carnets et gourdes.</div>
+  </div>
+  <img src="images/banniere.svg" class="banniere">
+
+  <div class="titre-section" id="produits">Nos produits</div>
+  <div class="produits">
+    <div class="carte">
+      <img src="images/mug.svg">
+      <div class="titre-produit">Mug en grès</div>
+      <div class="prix">12 €</div>
+      <div class="bouton ajouter">Ajouter</div>
+    </div>
+    <div class="carte">
+      <img src="images/sac.svg">
+      <div class="titre-produit">Sac en toile</div>
+      <div class="prix"><span class="ancien">24 €</span> <span class="solde">18 €</span></div>
+      <div class="bouton ajouter">Ajouter</div>
+    </div>
+    <div class="carte">
+      <img src="images/carnet.svg">
+      <div class="titre-produit">Carnet A5</div>
+      <div class="prix">6 €</div>
+      <div class="bouton ajouter">Ajouter</div>
+    </div>
+    <div class="carte">
+      <img src="images/gourde.svg">
+      <div class="titre-produit">Gourde inox</div>
+      <div class="prix">15 €</div>
+      <div class="bouton ajouter">Ajouter</div>
+    </div>
+  </div>
+  <div class="conditions">Livraison offerte dès 50 € : <a href="#" id="ouvrir">cliquez ici</a></div>
+
+  <div class="titre-section">Actualités</div>
+  <div class="articles">
+    <div class="article">
+      <div class="titre-produit">Bien choisir son mug</div>
+      <div>Quelle taille et quelle matière choisir.</div>
+      <a href="#">Lire la suite</a>
+    </div>
+    <div class="article">
+      <div class="titre-produit">Entretenir sa gourde</div>
+      <div>Se lave à la main et sèche à l'air.</div>
+      <a href="#">Lire la suite</a>
+    </div>
+  </div>
+
+  <div class="titre-section">Avis</div>
+  <div class="avis">"Great quality, fast delivery!"<br>Sam, client</div>
+
+  <div class="titre-section" id="livraison">Livraison</div>
+  <table>
+    <tr><td>Mode</td><td>Délai</td><td>Prix</td></tr>
+    <tr><td>Point relais</td><td>3 jours</td><td>3 €</td></tr>
+    <tr><td>Domicile</td><td>2 jours</td><td>5 €</td></tr>
+    <tr><td>Express</td><td>24 h</td><td>9 €</td></tr>
+  </table>
+
+  <div class="titre-section">Retrait en boutique</div>
+  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=2.33%2C48.85%2C2.37%2C48.87&amp;layer=mapnik"></iframe>
+
+  <div class="titre-section">Questions fréquentes</div>
+  <div class="question">Comment retourner un article ?</div>
+  <div class="reponse">Vous avez 14 jours pour le renvoyer.</div>
+  <div class="question">Puis-je modifier ma commande ?</div>
+  <div class="reponse">Oui, tant qu'elle n'est pas expédiée.</div>
+  <div class="question">Quels moyens de paiement acceptez-vous ?</div>
+  <div class="reponse">Carte bancaire et virement.</div>
+
+  <div class="pied">
+    <div>© 2026 Boutik</div>
+    <div>
+      <a href="#"><img src="images/facebook.svg"></a>
+      <a href="#"><img src="images/instagram.svg"></a>
+    </div>
+    <a href="#" tabindex="1">Mentions légales</a>
+  </div>
+</div>
+
+<div class="fond" id="modale">
+  <div class="fenetre">
+    <div class="titre-section">Conditions de livraison</div>
+    <div>Livraison offerte dès 50 € d'achat en France métropolitaine. Sinon, 5 €.</div>
+    <br>
+    <div class="bouton" id="fermer">X</div>
+  </div>
+</div>
+
+<div class="message" id="message"></div>
+
+<script src="bandeau.js"></script>
+<script src="accueil.js"></script>
+</body>
+</html>

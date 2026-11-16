@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Accueil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bandeau" id="bandeau">Livraison offerte dès 50 €</div>
+<div class="page">
+  <div class="entete">
+    <a href="index.html"><img src="images/logo.svg"></a>
+    <div class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#produits">Produits</a>
+      <a href="index.html#livraison">Livraison</a>
+      <a href="inscription.html">Inscription</a>
+    </div>
+  </div>
+
+  <div class="titre-section">Créer mon compte</div>
+  <div class="erreur" id="erreur"></div>
+  <div>Les champs entourés en rouge sont obligatoires.</div>
+  <br>
+  <input type="text" id="prenom" class="champ" placeholder="Prénom">
+  <input type="text" id="nom" class="champ rouge" placeholder="Nom">
+  <input type="text" id="email" class="champ rouge" placeholder="E-mail">
+  <input type="password" id="mdp" class="champ rouge" placeholder="Mot de passe">
+  <div>Vous êtes :</div>
+  <input type="radio" name="profil"> Particulier
+  <input type="radio" name="profil"> Professionnel
+  <br><br>
+  <input type="checkbox"> Je souhaite recevoir la newsletter
+  <br><br>
+  <div class="bouton" id="envoyer">Créer mon compte</div>
+
+  <div class="pied">
+    <div>© 2026 Boutik</div>
+    <div>
+      <a href="#"><img src="images/facebook.svg"></a>
+      <a href="#"><img src="images/instagram.svg"></a>
+    </div>
+    <a href="#" tabindex="1">Mentions légales</a>
+  </div>
+</div>
+
+<div class="message" id="message"></div>
+
+<script src="bandeau.js"></script>
+<script src="inscription.js"></script>
+</body>
+</html>

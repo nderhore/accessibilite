@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+a {
+  color: #7ab8e0;
+  text-decoration: none;
+}
+
+.bandeau {
+  background: #9fd0ee;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.page {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.entete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.entete img {
+  height: 50px;
+}
+
+.menu a {
+  margin-left: 24px;
+  white-space: nowrap;
+}
+
+.hero {
+  position: relative;
+  height: 200px;
+  background: #eef6fb;
+  padding: 50px 30px;
+  margin-bottom: 20px;
+}
+
+.deco {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.titre-grand {
+  font-size: 48px;
+  font-weight: bold;
+  color: #9fd0ee;
+}
+
+.banniere {
+  width: 1000px;
+  display: block;
+}
+
+.titre-section {
+  font-size: 24px;
+  font-weight: bold;
+  color: #9fd0ee;
+  margin: 40px 0 16px;
+}
+
+.titre-produit {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.produits {
+  display: flex;
+  gap: 20px;
+}
+
+.carte {
+  width: 230px;
+  height: 330px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.carte img {
+  width: 208px;
+  height: 160px;
+}
+
+.prix {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.ancien {
+  text-decoration: line-through;
+}
+
+.solde {
+  color: #e33;
+}
+
+.bouton {
+  display: inline-block;
+  background: #9fd0ee;
+  color: #fff;
+  padding: 8px 14px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.conditions {
+  margin-top: 16px;
+}
+
+.articles {
+  display: flex;
+  gap: 20px;
+}
+
+.article {
+  width: 490px;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.avis {
+  font-size: 18px;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #eee;
+  padding: 8px;
+}
+
+iframe {
+  width: 1000px;
+  height: 300px;
+  border: 0;
+}
+
+.question {
+  font-weight: bold;
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+  cursor: pointer;
+}
+
+.reponse {
+  display: none;
+  padding-bottom: 12px;
+}
+
+.reponse.ouverte {
+  display: block;
+}
+
+.pied {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  font-size: 11px;
+}
+
+.pied img {
+  width: 30px;
+  height: 30px;
+}
+
+.fond {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.fond.ouverte {
+  display: block;
+}
+
+.fenetre {
+  background: #fff;
+  width: 400px;
+  margin: 150px auto;
+  padding: 20px;
+}
+
+.message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #9fd0ee;
+  color: #fff;
+  padding: 12px 16px;
+  pointer-events: none;
+}
+
+.message:empty {
+  opacity: 0;
+}
+
+.champ {
+  display: block;
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.champ::placeholder {
+  color: #ccc;
+}
+
+.rouge {
+  border: 2px solid #f66;
+}
+
+.invalide {
+  background: #fee;
+}
+
+.erreur {
+  color: #e33;
+  margin-bottom: 8px;
+}
